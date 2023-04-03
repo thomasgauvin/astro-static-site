@@ -20,7 +20,7 @@ jobs:
           submodules: true
       - name: Build And Deploy
         id: builddeploy
-        uses: thomasgauvin/custom-gh-action-for-swa@main
+        uses: ./.github/actions/staticsitesclient
         with:
           execute: "true"
           # azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_RIVER_0FD417A00 }}
