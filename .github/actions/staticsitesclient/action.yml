@@ -1,0 +1,15 @@
+name: StaticSitesClient CLI
+description: StaticSitesClient CLI
+author: Microsoft
+inputs:
+  version:
+    required: true
+    description: tool version
+    default: stable
+  execute:
+    required: false
+    description: execute
+    default: "false"
+runs:
+  using: "node16"
+  main: "dist/index.js"
